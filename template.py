@@ -1,9 +1,9 @@
-# import logging
+import logging
 import os
 from pathlib import Path
 
 
-# logging.basicConfig(level=logging.INFO)
+logging.basicConfig(level=logging.INFO)
 
 # require files for projects 
 project_names = "ml_practice_project"
@@ -21,10 +21,10 @@ list_of_files = [
     f'src/{project_names}/logger.py',
     f'src/{project_names}/utlis.py',
     'utlis.py'
-    # 'Dockerfile',
-    # 'requirements.txt',
-    # 'setup.py',
-    # 'app.py'    
+    'Dockerfile',
+    'requirements.txt',
+    'setup.py',
+    'app.py'    
 ]
 
 for file in list_of_files:
@@ -34,14 +34,14 @@ for file in list_of_files:
 
     if filedir != "":
         os.makedirs(filedir, exist_ok=True)
-        print(f"Creating directing: {filedir} for the file {filename}")
+        logging.info(f"Creating directing: {filedir} for the file {filename}")
 
     if(not  os.path.exists(filepath)) or  (os.path.getsize(filepath) == 0):
         with open(filepath,'w') as f:
             pass
-            print(f'creating empty file: {filename}')
+            logging.info(f'creating empty file: {filename}')
     else:
-        print(f'file already exists: {filename}')
+        logging.info(f'file already exists: {filename}')
 
 
 
