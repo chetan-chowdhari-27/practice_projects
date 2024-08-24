@@ -6,7 +6,7 @@ from pathlib import Path
 logging.basicConfig(level=logging.INFO)
 
 # require files for projects 
-project_names = "ml_project"
+project_names = "mlproject"
 list_of_files = [
     f'src/{project_names}/__init__.py',
     f'src/{project_names}/components/__init__.py',
