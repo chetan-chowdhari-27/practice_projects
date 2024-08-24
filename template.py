@@ -6,7 +6,7 @@ from pathlib import Path
 logging.basicConfig(level=logging.INFO)
 
 # require files for projects 
-project_names = "ml_practice_project"
+project_names = "ml_project"
 list_of_files = [
     f'src/{project_names}/__init__.py',
     f'src/{project_names}/components/__init__.py',
@@ -20,10 +20,7 @@ list_of_files = [
     f'src/{project_names}/exception.py',
     f'src/{project_names}/logger.py',
     f'src/{project_names}/utlis.py',
-    'utlis.py'
     'Dockerfile',
-    'requirements.txt',
-    'setup.py',
     'app.py'    
 ]
 
