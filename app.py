@@ -2,8 +2,6 @@ import sys
 from src.ml_project.logger import logging
 from src.ml_project.exception import CustomException 
 
-
-
 if __name__ == "__main__":
     logging.info('the  script is running')
 
