@@ -23,15 +23,19 @@ class DataIngestion:
     def initiate_data_ingestion(self):
         try:
             df = read_sql_data()
-            ## Reading the data from 
+            # Reading the data from 
             logging.info("Reading completed mysql database")
-
+            # saving raw data to csv file
             os.makedirs(os.path.dirname(self.ingestion_config.train_data_path),exist_ok=True)
-
             df.to_csv(self.ingestion_config.raw_data_path,index=False)
+
+            # spliting the data 80 % for training and 20% for testing
             train_set, test_set= train_test_split(df, test_size=0.2,random_state=42)
+            
+            #  saving the data in csv format
             train_set.to_csv(self.ingestion_config.train_data_path,index=False)
             test_set.to_csv(self.ingestion_config.test_data_path,index=False)
+
             logging.info("Data ingestion completed")
 
             return(
