@@ -6,13 +6,10 @@ from sklearn.preprocessing import OneHotEncoder, StandardScaler
 from sklearn.compose import ColumnTransformer
 from sklearn.impute import SimpleImputer
 from sklearn.pipeline import Pipeline
-
 from src.ml_project.utlis import save_object
-
 from src.ml_project.exception import CustomException
 from src.ml_project.logger import logging
 import os
-
 
 
 @dataclass
@@ -94,6 +91,7 @@ class DataTransformation:
             train_arr = np.c_[
                 input_feature_train_arr, np.array(target_feature_train_df)
             ]
+            
             test_arr = np.c_[input_feature_test_arr, np.array(target_feature_test_df)]
 
             logging.info(f"Saved preprocessing object")
