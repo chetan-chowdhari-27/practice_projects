@@ -5,6 +5,7 @@ from src.ml_project.exception import CustomException
 from dotenv import load_dotenv
 import pandas as pd
 import pymysql
+import pickle
 
 load_dotenv()
 
