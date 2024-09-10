@@ -6,12 +6,12 @@ from src.ml_project.components.data_ingestion import DataIngestion
 from src.ml_project.components.data_transformation import DataTransformation
 
 if __name__ == "__main__":
-    logging.info('the  script is running')
+    logging.info(' The script is running')
 
     try:
         # data_ingestion_config = DataIngestionConfig()
         data_ingestion= DataIngestion()
-        data_ingestion.initiate_data_ingestion()
+        # data_ingestion.initiate_data_ingestion()
         train_data_path,test_data_path=data_ingestion.initiate_data_ingestion()
 
         #data_transformation_config=DataTransformationConfig()
