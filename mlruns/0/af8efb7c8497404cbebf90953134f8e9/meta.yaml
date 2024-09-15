@@ -1,0 +1,15 @@
+artifact_uri: file:///C:/Users/win10/Desktop/Projects/practice_project/mlruns/0/af8efb7c8497404cbebf90953134f8e9/artifacts
+end_time: 1726427400614
+entry_point_name: ''
+experiment_id: '0'
+lifecycle_stage: active
+run_id: af8efb7c8497404cbebf90953134f8e9
+run_name: skillful-fox-209
+run_uuid: af8efb7c8497404cbebf90953134f8e9
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1726427400553
+status: 4
+tags: []
+user_id: root

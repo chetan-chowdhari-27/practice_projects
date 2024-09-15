@@ -1,0 +1,15 @@
+artifact_uri: file:///C:/Users/win10/Desktop/Projects/practice_project/mlruns/0/1dbcbff838a6455486f27592a5fdf08a/artifacts
+end_time: 1726427673284
+entry_point_name: ''
+experiment_id: '0'
+lifecycle_stage: active
+run_id: 1dbcbff838a6455486f27592a5fdf08a
+run_name: treasured-kite-369
+run_uuid: 1dbcbff838a6455486f27592a5fdf08a
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1726427673150
+status: 4
+tags: []
+user_id: root
